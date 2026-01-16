@@ -228,4 +228,20 @@ document.addEventListener("keydown", (e) => {
   });
 })();
 
+// reveal final message on scroll
+const finalCard = document.querySelector(".final-card");
+if (finalCard) {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        finalCard.classList.add("show");
+        observer.disconnect();
+      }
+    },
+    { threshold: 0.4 }
+  );
+  observer.observe(finalCard);
+}
+
+
 
