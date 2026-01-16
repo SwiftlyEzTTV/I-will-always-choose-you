@@ -174,8 +174,8 @@ body{
 .name{
   color: #11806a;
   text-shadow:
-    0 0 6px rgba(255, 100, 180, 0.6),
-    0 0 14px rgba(255, 60, 150, 0.4);
+    0 0 6px rgba(17, 128, 106, 0.6),
+    0 0 14px rgba(17, 128, 106, 0.4);
 }
 
 /* Word-by-word reveal */
@@ -385,6 +385,7 @@ body{
 .lightbox-close:hover {
   background: rgba(255,255,255,0.20);
 }
+
 
 
 
