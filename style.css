@@ -386,6 +386,53 @@ body{
   background: rgba(255,255,255,0.20);
 }
 
+.final-message{
+  width: min(900px, 92vw);
+  margin: 120px auto 160px;
+  padding: 0 16px;
+}
+
+.final-card{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.final-card{
+  padding: 36px 28px;
+  border-radius: 22px;
+
+  background: rgba(0,0,0,0.28);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+
+  text-align: center;
+}
+
+.final-card p{
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255,214,232,0.95);
+  margin: 0 0 22px;
+}
+
+.final-card p:last-of-type{
+  margin-bottom: 0;
+}
+
+.signature{
+  margin-top: 26px;
+  font-size: 1.1rem;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+
+.final-card.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
